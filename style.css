@@ -74,6 +74,7 @@ a{ color: var(--signal); }
   box-shadow: 0 2px 20px rgba(0,0,0,0.18);
 }
 
+/*
 .header-bar{
   max-width: 1240px;
   margin: 0 auto;
@@ -83,8 +84,23 @@ a{ color: var(--signal); }
   justify-content: space-between;
   gap: 20px;
 }
+*/
+
+.header-bar{
+    max-width:1600px;
+    width:98%;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+}
 
 /* Brand block reuses the existing <header><h1>/<p></header> markup */
+
+/*
 .site-header header{
   background: none;
   color: #fff;
@@ -95,8 +111,47 @@ a{ color: var(--signal); }
   gap: 14px;
   flex: 0 0 auto;
 }
+*/
+
+
+
+.site-header header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex:0 0 360px;
+}
+
+/* ---------- Brand Text ---------- */
+
+.brand-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.brand-text h1{
+    margin:0;
+    color:#ffffff;
+    /*font-size:32px;*/
+	font-size:22px;
+    font-family:var(--font-display);
+    font-weight:700;
+    line-height:1.1;
+}
+
+.brand-text p{
+    margin:4px 0 0;
+    color:#9FB3D6;
+    /*font-size:13px;*/
+	font-size:11px;
+    line-height:1.4;
+    font-family:var(--font-mono);
+}
 
 .brand-mark{
+  /*width: 44px;
+  height: 44px;*/
   width: 44px;
   height: 44px;
   border-radius: 12px;
@@ -145,6 +200,7 @@ a{ color: var(--signal); }
 }
 
 /* Nav */
+/*
 nav{
   background: none;
   color: inherit;
@@ -155,16 +211,31 @@ nav{
   gap: 4px;
   justify-content: flex-end;
 }
+*/
+
+nav{
+    flex:1;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    flex-wrap:nowrap;
+
+    gap:8px;
+}
 
 nav a{
   font-family: var(--font-mono);
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size:11px;
   font-weight: 500;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #C6D3EC;
   margin: 0;
-  padding: 9px 13px;
+  /*padding: 9px 13px;*/
+  padding:8px 10px;
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.2s var(--ease), color 0.2s var(--ease);
