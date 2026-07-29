@@ -312,8 +312,17 @@ main{
   margin-bottom: 10px;
 }
 
+
+/*
 .eyebrow::before{ content: "["; color: var(--circuit); }
 .eyebrow::after{ content: "]"; color: var(--circuit); }
+*/
+
+
+.eyebrow::before,
+.eyebrow::after{
+    content: "";
+}
 
 /* Section heading */
 .section-heading{
